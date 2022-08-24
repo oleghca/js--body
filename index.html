@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link src="./assets/css/style.css" />
+    <script src="./assets/js/app.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div
+      class="row mt-5 w-75 mx-auto border border-success shadow-lg p-2 text-dark rounded p-5 text-dark bg-opacity-50"
+    >
+      <label for="Form" class="col-sm-3 col-form-label col-form-label-sm"
+        >Ваш вес (кг):</label
+      >
+      <div class="col-sm-8">
+        <input
+          type="number"
+          class="form-control form-control-sm"
+          id="Form"
+          min="3"
+          max="250"
+          value=""
+        />
+      </div>
+      <label for="Fort" class="col-sm-3 col-form-label mt-2 col-form-label-sm"
+        >Ваш рост (м):</label
+      >
+      <div class="col-sm-8">
+        <input
+          type="number"
+          class="form-control mt-2 form-control-sm"
+          id="Fort"
+          min="01"
+          max="9.9.9.9.9.9"
+          value=""
+        />
+      </div>
+      <button
+        type="button"
+        class="btn border shadow border-danger bg-danger p-2 text-dark bg-opacity-10 btn my-3"
+        onclick="index()"
+        style="
+          --bs-btn-padding-y: 0.25rem;
+          --bs-btn-padding-x: 0.5rem;
+          --bs-btn-font-size: 0.75rem;
+        "
+      >
+        Расчитуем
+      </button>
+      <label for="Formula" class="col-sm-3 col-form-label col-form-label-sm"
+        >Ваш индекс:</label
+      >
+      <div class="col-sm-8">
+        <output
+          type="number"
+          class="form-control form-control-sm"
+          id="Formula"
+        ></output>
+      </div>
+      <label for="Format" class="col-sm-3 col-form-label mt-2 col-form-label-sm"
+        >Означает:</label
+      >
+      <div class="col-sm-8">
+        <output
+          type="text"
+          class="form-control form-control-sm mt-2"
+          id="Format"
+        ></output>
+      </div>
+    </div>
+  </body>
+</html>
